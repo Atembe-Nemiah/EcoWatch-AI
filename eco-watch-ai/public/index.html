@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSmart AI — Waste-to-Value Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Mobile Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <span class="logo-icon">🌿</span>
+        <div>
+          <h1 class="logo-text">EcoSmart<strong>AI</strong></h1>
+          <span class="logo-subtitle">Waste-to-Value Platform</span>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-cta">
+      <div class="cta-label">Quick action</div>
+      <a href="#/reports/new" class="btn btn-cta" id="sidebarCta">+ Submit Waste Report</a>
+    </div>
+    <nav class="sidebar-nav" id="sidebarNav">
+      <a href="#/" class="nav-item active" data-page="overview">
+        <span class="nav-icon">📊</span> Overview
+      </a>
+      <a href="#/reports" class="nav-item" data-page="reports">
+        <span class="nav-icon">📋</span> Waste Reports
+      </a>
+      <a href="#/analysis" class="nav-item" data-page="analysis">
+        <span class="nav-icon">🤖</span> AI Waste Analysis
+      </a>
+      <a href="#/recovery" class="nav-item" data-page="recovery">
+        <span class="nav-icon">♻️</span> Resource Recovery
+      </a>
+      <a href="#/devices" class="nav-item" data-page="devices">
+        <span class="nav-icon">📡</span> IoT Monitoring
+      </a>
+      <a href="#/insights" class="nav-item" data-page="insights">
+        <span class="nav-icon">🌍</span> Environmental Insights
+      </a>
+      <a href="#/activity" class="nav-item" data-page="activity">
+        <span class="nav-icon">🕐</span> Activity History
+      </a>
+      <a href="#/settings" class="nav-item" data-page="settings">
+        <span class="nav-icon">⚙️</span> Settings
+      </a>
+    </nav>
+    <div class="sidebar-profile">
+      <div class="profile-avatar">A</div>
+      <div class="profile-info">
+        <span class="profile-name">Admin User</span>
+        <span class="profile-role">Campus Operations</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Wrapper -->
+  <div class="main-wrapper">
+    <!-- Header -->
+    <header class="top-header">
+      <div class="header-left">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle sidebar">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search reports, materials, keywords..." id="globalSearch">
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="system-status" id="systemStatus">
+          <span class="status-dot offline"></span>
+          <span class="status-text">Connecting…</span>
+        </div>
+        <div class="header-time" id="headerTime"></div>
+        <div class="header-user">
+          <div class="user-avatar-sm">A</div>
+          <div class="user-info-sm">
+            <span class="user-name-sm">Admin</span>
+            <span class="user-role-sm">Campus Local</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content" id="pageContent">
+      <!-- Dynamic content injected here -->
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="/js/reports.js"></script>
+  <script src="/js/devices.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

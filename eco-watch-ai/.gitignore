@@ -1,0 +1,15 @@
+node_modules/
+.env
+uploads/*
+!uploads/.gitkeep
+data/*.sqlite
+data/*.sqlite-journal
+*.log
+.DS_Store
+Thumbs.db
+database/*.sqlite
+database/*.sqlite-journal
+data/*.sqlite-*
+database/*.sqlite-*
+*.sqlite-shm
+*.sqlite-wal
